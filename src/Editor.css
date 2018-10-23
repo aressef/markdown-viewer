@@ -1,8 +1,9 @@
-.Editor {
-  border: 2px solid black;
-  text-align: center;
-  background-color: #f5f5f5;
-  color: #333;
-  margin: 20px;
-  padding: 20px;
+.editor-div {
+  height: 350px;
+  width: 500px;
+}
+
+#editor {
+  height: 300px;
+  width: 500px;
 }
