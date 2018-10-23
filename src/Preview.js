@@ -6,8 +6,10 @@ class Preview extends React.Component {
     super(props);
   }
 
-  componentDidUpdate() {
-    this.refs.preview.innerHTML = marked(this.props.input);
+  componentDidUpdate(prevProps) {
+    if (this.props.output !== prevProps.output) {
+      this.refs.preview.innerHTML = marked(this.props.output);
+    }
   }
 
   render() {
