@@ -5,13 +5,16 @@ class Preview extends React.Component {
   constructor(props) {
     super(props);
   }
+
+  componentDidUpdate() {
+    this.refs.preview.innerHTML = marked(this.props.input);
+  }
+
   render() {
     return (
       <div>
         <h2>Preview</h2>
-        <div className="preview-output-div" id="preview">
-          {marked(this.props.input)}
-        </div>
+        <div className="preview-output-div" id="preview" ref="preview" />
       </div>
     );
   }
