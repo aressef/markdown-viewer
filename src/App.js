@@ -5,9 +5,9 @@ import Editor from "./Editor";
 import Preview from "./Preview";
 
 // CSS Imports
-import "./App.css";
-import "./Editor.css";
-import "./Preview.css";
+import "./App.scss";
+import "./Editor.scss";
+import "./Preview.scss";
 
 class App extends React.Component {
   constructor(props) {
