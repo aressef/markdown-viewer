@@ -1,16 +1,15 @@
 import React from "react";
-// import marked from "marked";
+import marked from "marked";
 
 class Preview extends React.Component {
   componentDidUpdate(prevProps) {
-    const myMarked = require("marked");
     // set breaks to true so carriage returns are rendered as <br> (line breaks)
-    myMarked.setOptions({
+    marked.setOptions({
       breaks: true
     });
 
     if (this.props.output !== prevProps.output) {
-      this.refs.preview.innerHTML = myMarked(this.props.output);
+      this.refs.preview.innerHTML = marked(this.props.output);
     }
   }
 
