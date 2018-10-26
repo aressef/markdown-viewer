@@ -7,6 +7,7 @@ class Editor extends React.Component {
         <h2>Editor</h2>
         <textarea
           id="editor"
+          className="editor-textarea"
           onChange={this.props.handleChange}
           value={this.props.input}
         />

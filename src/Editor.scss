@@ -1,0 +1,22 @@
+.editor-div {
+  width: 40%;
+  background-color: #e5e5e5;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.editor-textarea {
+  background-color: #e5e5e5;
+  width: 95%;
+  height: 100%;
+  border: none;
+  overflow: auto;
+  outline: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  resize: none;
+}

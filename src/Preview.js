@@ -5,6 +5,9 @@ class Preview extends React.Component {
   componentDidUpdate(prevProps) {
     // set breaks to true so carriage returns are rendered as <br> (line breaks)
     marked.setOptions({
+      highlight: function(code) {
+        return require("highlight.js").highlightAuto(code).value;
+      },
       breaks: true
     });
 
@@ -15,7 +18,7 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="preview-div">
         <h2>Preview</h2>
         <div className="preview-output-div" id="preview" ref="preview" />
       </div>
