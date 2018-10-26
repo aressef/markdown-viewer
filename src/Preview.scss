@@ -1,0 +1,27 @@
+.preview-div {
+  width: 60%;
+  padding: 0 30px 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #383838
+}
+
+pre {
+  display: flex;
+  flex-direction: column;
+  background-color: #34323f;
+  border-radius: 5px;
+  padding: 20px;
+  line-height: 1.3;
+}
+
+code {
+  background-color: #34323f;
+  padding: 5px;
+  color: #00c113;
+  font-size: 14px;
+  border-radius: 3px;
+  max-width: 550px;
+}

@@ -5,9 +5,9 @@ import Editor from "./Editor";
 import Preview from "./Preview";
 
 // CSS Imports
-import "./App.css";
-import "./Editor.css";
-import "./Preview.css";
+import "./App.scss";
+import "./Editor.scss";
+import "./Preview.scss";
 
 class App extends React.Component {
   constructor(props) {
@@ -73,12 +73,8 @@ You can also style you text in a few cool ways. For **bold** text, type between 
   render() {
     return (
       <div className="app-comp">
-        <Editor
-          className="editor-comp"
-          input={this.state.input}
-          handleChange={this.handleChange}
-        />
-        <Preview className="preview-comp" output={this.state.input} />
+        <Editor input={this.state.input} handleChange={this.handleChange} />
+        <Preview output={this.state.input} />
       </div>
     );
   }
